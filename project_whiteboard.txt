@@ -1,0 +1,11 @@
+Backpropagation: 
+1. forward pass 
+2. gradient calculation for loss 
+3. gradient calculation for everything else 
+4. update parameters w/ gradients 
+5. repeat 
+
+basic idea: 
+- use loss to find out how each output neuron should be nudged 
+- then for every output neuron, find the nudges to each previously connected neuron that will make this neuron fire more or less (depending on if we want that neuron to be active). 
+- do this recursively for every neuron and every layer (how much nudge do we need to connected neurons given how much we need to nudge this neuron)
